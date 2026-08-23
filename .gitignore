@@ -1,0 +1,5 @@
+# CMake will place all generated build files in this folder
+build/
+
+# Personal VS Code settings for this computer
+.vscode/
