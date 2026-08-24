@@ -6,4 +6,4 @@ This repository is a full rebuild of my original working demo. The original vers
 
 ## Current status
 
-Early development: SDL3 window and basic INPUT → UPDATE → RENDER loop working.
+Early development. The SDL3 window, renderer, and basic game loop are working. The project now uses a `Game` class that keeps setup, input, update, render, and shutdown separate instead of leaving everything inside `main.cpp`.

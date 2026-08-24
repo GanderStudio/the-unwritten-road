@@ -13,6 +13,12 @@ find_package(SDL3 REQUIRED CONFIG)
 
 add_executable(the_unwritten_road
     src/main.cpp
+    src/Game.cpp
+)
+
+target_include_directories(the_unwritten_road
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 target_link_libraries(the_unwritten_road
