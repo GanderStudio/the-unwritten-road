@@ -7,3 +7,8 @@ This repository is a full rebuild of my original working demo. The original vers
 ## Current status
 
 Early development. The SDL3 window, renderer, and basic game loop are working. The project now uses a `Game` class that keeps setup, input, update, render, and shutdown separate instead of leaving everything inside `main.cpp`.
+
+
+## Gander Studio
+
+This project is developed by [Gander Studio](https://ganderstudio.be/).
