@@ -14,6 +14,7 @@ find_package(SDL3 REQUIRED CONFIG)
 add_executable(the_unwritten_road
     src/main.cpp
     src/Game.cpp
+    src/Player.cpp
 )
 
 target_include_directories(the_unwritten_road

@@ -21,8 +21,7 @@ bool Game::initialize()
         "The Unwritten Road",
         kWindowWidth,
         kWindowHeight,
-        0
-    );
+        0);
 
     if (window_ == nullptr)
     {
@@ -79,7 +78,7 @@ void Game::input()
 
 void Game::update()
 {
-    // There is no game state to update yet.
+    player_.update();
 }
 
 void Game::render()
@@ -87,8 +86,7 @@ void Game::render()
     SDL_SetRenderDrawColor(renderer_, 38, 34, 30, 255);
     SDL_RenderClear(renderer_);
 
-    SDL_SetRenderDrawColor(renderer_, 221, 184, 94, 255);
-    SDL_RenderFillRect(renderer_, &playerRectangle_);
+    player_.render(renderer_);
 
     SDL_RenderPresent(renderer_);
 }

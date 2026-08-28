@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SDL3/SDL.h>
+#include "Player.hpp"
 
 class Game
 {
@@ -22,12 +23,7 @@ private:
     SDL_Window* window_ = nullptr;
     SDL_Renderer* renderer_ = nullptr;
 
-    SDL_FRect playerRectangle_{
-        100.0F,
-        100.0F,
-        48.0F,
-        48.0F
-    };
+    Player player_;
 
     static constexpr int kWindowWidth = 1280;
     static constexpr int kWindowHeight = 720;
